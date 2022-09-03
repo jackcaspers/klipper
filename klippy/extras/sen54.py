@@ -6,7 +6,7 @@
 import logging
 from . import bus
 
-SEN54_CHIP_ADDR = 0x76
+SEN54_ADDR = 0x76
 
 SEN54_REGS = {
     'START_M': 0x0021, 
@@ -43,6 +43,15 @@ class SEN54:
         self.chip_address = SEN54_CHIP_ADDR
         self.i2c = bus.MCU_I2C_from_config(
             config, default_addr=SEN54_CHIP_ADDR, default_speed=100000)
+
+    def start_measurement():
+        pass
+    
+    def stop_measurement():
+        pass
+
+    def get_measurement():
+        pass
 
 
 def load_config(config):
